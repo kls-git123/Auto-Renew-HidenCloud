@@ -64,7 +64,7 @@ jobs:
           else
             git commit -m "⏱️ Auto Update by Github Actions $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M:%S')"
             git pull --rebase origin main
-            git push origin main
+            git push --force origin main
           fi
       
       - name: 🧹 清理旧的工作流运行记录
